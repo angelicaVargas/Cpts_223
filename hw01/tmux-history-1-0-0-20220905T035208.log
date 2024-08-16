@@ -1,0 +1,74 @@
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223$                    
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223$ mkdir hw1          
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223$ cd hw1             
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ ls             
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ cd ..          
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223$ ls                 
+hw1                    
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223$ cd hw1             
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ touch hw1.txt  
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ ls             
+hw1.txt                
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ nano helloworld.cpp                   
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ ls             
+helloworld.cpp  hw1.txt                       
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ gcc helloworld.cpp -o helloworld      
+/usr/bin/ld: /tmp/cc8EAJqR.o: in function `main':                                            
+helloworld.cpp:(.text+0x1d): undefined reference to `std::cout'                              
+/usr/bin/ld: helloworld.cpp:(.text+0x22): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)'        
+/usr/bin/ld: helloworld.cpp:(.text+0x2c): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)'                      
+/usr/bin/ld: helloworld.cpp:(.text+0x37): undefined reference to `std::ostream::operator<<(std::ostream& (*)(std::ostream&))'              
+/usr/bin/ld: helloworld.cpp:(.text+0x54): undefined reference to `std::cout'                 
+/usr/bin/ld: helloworld.cpp:(.text+0x59): undefined reference to `std::ostream::operator<<(double)'                 
+/usr/bin/ld: helloworld.cpp:(.text+0x63): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)'                      
+/usr/bin/ld: helloworld.cpp:(.text+0x6e): undefined reference to `std::ostream::operator<<(std::ostream& (*)(std::ostream&))'              
+/usr/bin/ld: /tmp/cc8EAJqR.o: in function `__static_initialization_and_destruction_0(int, int)':                    
+helloworld.cpp:(.text+0xa2): undefined reference to `std::ios_base::Init::Init()'            
+/usr/bin/ld: helloworld.cpp:(.text+0xb7): undefined reference to `std::ios_base::Init::~Init()'                     
+collect2: error: ld returned 1 exit status    
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ nano helloworld.cpp                   
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$  clear         
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ ls             
+helloworld.cpp  hw1.txt                       
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ nano helloworld.cpp                   
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ ls             
+helloworld.cpp  hw1.txt                       
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ rm helloworld.cpp                     
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ ls             
+hw1.txt                
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ vi helloworld.cpp                     
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ ls             
+helloworld.cpp  hw1.txt                       
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ g++ helloworld helloworld.cpp         
+g++: error: helloworld: No such file or directory                                            
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ gcc helloworld.cpp -o helloworld      
+/usr/bin/ld: /tmp/cchWkDJb.o: in function `main':                                            
+helloworld.cpp:(.text+0x1d): undefined reference to `std::cout'                              
+/usr/bin/ld: helloworld.cpp:(.text+0x22): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)'        
+/usr/bin/ld: helloworld.cpp:(.text+0x2c): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)'                      
+/usr/bin/ld: helloworld.cpp:(.text+0x37): undefined reference to `std::ostream::operator<<(std::ostream& (*)(std::ostream&))'              
+/usr/bin/ld: helloworld.cpp:(.text+0x54): undefined reference to `std::cout'                 
+/usr/bin/ld: helloworld.cpp:(.text+0x59): undefined reference to `std::ostream::operator<<(double)'                 
+/usr/bin/ld: helloworld.cpp:(.text+0x63): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)'                      
+/usr/bin/ld: helloworld.cpp:(.text+0x6e): undefined reference to `std::ostream::operator<<(std::ostream& (*)(std::ostream&))'              
+/usr/bin/ld: /tmp/cchWkDJb.o: in function `__static_initialization_and_destruction_0(int, int)':                    
+helloworld.cpp:(.text+0xa2): undefined reference to `std::ios_base::Init::Init()'            
+/usr/bin/ld: helloworld.cpp:(.text+0xb7): undefined reference to `std::ios_base::Init::~Init()'                     
+collect2: error: ld returned 1 exit status    
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ vi helloworld.cpp                     
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ clear          
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ g++ -o helloworld helloworld.cpp      
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ ls             
+helloworld  helloworld.cpp  hw1.txt           
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ ./helloworld   
+Hello World            
+16                     
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ vi helloworld.cpp                     
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ pwd            
+/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1                                      
+a.vargasescobar@elec:/nfs/concen/usr2/cslab/home/a.vargasescobar/cpts223/hw1$ cd ~           
+a.vargasescobar@elec:~$ pwd                   
+/cslab/home/a.vargasescobar                   
+a.vargasescobar@elec:~$ ls                    
+cpts223  tmux-history-1-0-0-20220905T033348.log                                              
+a.vargasescobar@elec:~$                       
